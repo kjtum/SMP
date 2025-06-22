@@ -146,7 +146,7 @@ with col2:
 st.markdown("---")
 st.subheader("安定マッチング一覧")
 matchings = all_stable_matchings(st.session_state.men_prefs, st.session_state.women_prefs)
-										zzfor i in range(0, len(matchings), 2):
+for i in range(0, len(matchings), 2):
     cols = st.columns(2)
     for j in range(2):
         if i+j >= len(matchings): break
