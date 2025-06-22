@@ -23,16 +23,9 @@ st.title("安定マッチング問題")
 
 st.markdown("""
 <div style='font-size: small; margin-bottom: 10px;'>
-リンク：
-<a href="https://kjtum.github.io/labpage/poster.pdf" target="_blank">▶ 安定結婚問題の説明</a>　
-　<a href="https://eoghzzfgagjzk9e8pucwam.streamlit.app/" target="_blank">▶ 安定マッチング探索GS法</a>
-</div>
-""", unsafe_allow_html=True)
-st.markdown("""
-<div style='font-size: small; margin-bottom: 10px;'>
-ページ内リンク：　
-<a href="#allM">▶ 求まった安定マッチング</a>　
-　<a href="#idx">▶ 各指標での安定マッチング比較</a>
+    <a href="explain.html" target="_blank">▶ 安定結婚問題の説明</a><br>
+    <a href="https://eoghzzfgagjzk9e8pucwam.streamlit.app/" target="_blank">▶ 安定マッチング探索GS法</a><br>
+    <a href="https://ja.wikipedia.org/wiki/安定結婚問題" target="_blank">▶ Wikipedia（安定結婚問題）</a>
 </div>
 """, unsafe_allow_html=True)
 
@@ -148,8 +141,6 @@ with col2:
                 st.session_state.women_prefs[w] = new
 
 # -------------------- マッチングと図の表示 -------------------- #
-
-st.markdown('<a name="allM"></a>', unsafe_allow_html=True)
 st.markdown("---")
 st.subheader("安定マッチング一覧")
 matchings = all_stable_matchings(st.session_state.men_prefs, st.session_state.women_prefs)
@@ -221,10 +212,8 @@ def highlight_special(df: pd.DataFrame):
     styles.loc[df["最小"] == max_min_value, "最小"] = "color:red; font-weight:bold;"
 
     return styles
-st.markdown("---")
-st.markdown('<a name="idx"></a>', unsafe_allow_html=True)
+
 st.markdown("### 5つの指標での安定マッチングの比較")
-#st.markdown("### <div id="idx">5つの指標での安定マッチングの比較</div>")
 styled_df = df.style.apply(highlight_special, axis=None)
 st.dataframe(styled_df, use_container_width=True)
 
