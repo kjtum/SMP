@@ -24,7 +24,7 @@ st.title("安定マッチング問題")
 st.markdown("""
 <div style='font-size: small; margin-bottom: 10px;'>
     <a href="explain.html" target="_blank">▶ 安定結婚問題の説明</a><br>
-    <a href="https://jht72mtp85txu9zih7gn5m.streamlit.app/" target="_blank">▶ 安定マッチング探索GS法</a><br>
+    <a href="https://eoghzzfgagjzk9e8pucwam.streamlit.app/" target="_blank">▶ 安定マッチング探索GS法</a><br>
     <a href="https://ja.wikipedia.org/wiki/安定結婚問題" target="_blank">▶ Wikipedia（安定結婚問題）</a>
 </div>
 """, unsafe_allow_html=True)
