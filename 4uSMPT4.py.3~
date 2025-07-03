@@ -25,8 +25,7 @@ st.markdown("""
 <div style='font-size: small; margin-bottom: 10px;'>
 リンク：
 <a href="https://kjtum.github.io/labpage/poster.pdf" target="_blank">▶ 安定結婚問題の説明</a>　
-　<a href="https://eoghzzfgagjzk9e8pucwam.streamlit.app/" target="_blank">▶ 安定マッチング探索GS法</a>　
-  <a href="https://kjtum.github.io/labpage/stproofness.pdf" target="_blank">▶ 耐戦略性の説明</a>
+　<a href="https://eoghzzfgagjzk9e8pucwam.streamlit.app/" target="_blank">▶ 安定マッチング探索GS法</a>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("""
