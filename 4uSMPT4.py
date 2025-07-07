@@ -228,6 +228,7 @@ st.markdown("### 5つの指標での安定マッチングの比較")
 #st.markdown("### <div id="idx">5つの指標での安定マッチングの比較</div>")
 styled_df = df.style.apply(highlight_special, axis=None)
 st.dataframe(styled_df, use_container_width=True)
+st.markdown("---")
 
 # -------------------- ソースダウンロード -------------------- #
 # 実行ファイル自身を読み取り専用モードで開き、ダウンロードボタンを提供
