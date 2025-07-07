@@ -228,8 +228,8 @@ st.markdown("### 5つの指標での安定マッチングの比較")
 #st.markdown("### <div id="idx">5つの指標での安定マッチングの比較</div>")
 styled_df = df.style.apply(highlight_special, axis=None)
 st.dataframe(styled_df, use_container_width=True)
-st.markdown('<ul><li>満足度合計最大化：全員の満足度が全体として向上するが，一部のメンバーにだけ満足度が低くなる可能性がある')
-st.markdown('<li>満足度合計最大化：全員の満足度が全体として向上するが，一部のメンバーにだけ満足度が低くなる可能性がある</ul>')
+st.markdown("""<ul><li>満足度合計最大化：全員の満足度が全体として向上するが，一部のメンバーにだけ満足度が低くなる可能性がある""")
+st.markdown("""<li>満足度合計最大化：全員の満足度が全体として向上するが，一部のメンバーにだけ満足度が低くなる可能性がある</ul>""")
 st.markdown("---")
 
 # -------------------- ソースダウンロード -------------------- #
