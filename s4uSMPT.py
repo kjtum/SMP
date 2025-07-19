@@ -18,7 +18,7 @@ except Exception:
     pass
 
 st.title("安定マッチング問題")
-
+st.markdown("---")
 st.markdown("""
 <div style='font-size: small; margin-bottom: 10px;'>
 リンク：
@@ -38,6 +38,8 @@ st.markdown("""
 
 # -------------------- 初期化UI（メイン画面に表示） -------------------- #
 preset_keys = sorted(BEST_PREFS.keys())
+
+st.markdown("---")
 st.markdown("### 好みの初期化")
 col_init1, col_init2, col_init3 = st.columns([2, 1, 1])
 
@@ -121,6 +123,8 @@ def draw_matching_with_images(matching, men_prefs, women_prefs):
     return fig
 
 # -------------------- 現在の好み表示 -------------------- #
+
+st.markdown("---")
 st.subheader("現在の好み")
 col1, col2 = st.columns(2)
 
